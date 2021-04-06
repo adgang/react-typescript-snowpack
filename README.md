@@ -11,6 +11,7 @@ Note: Because we start from scratch and add snowpack, react and typescript in th
 3. Run snowpack dev server.
 4. Add snowpack config.
 5. Add javascript file.
+6. Use typescript file.
 
 ## 1. Created an npm package
 
@@ -46,3 +47,8 @@ To make this step easier, generate a config file first with `npx snowpack init` 
 
 ## 5. Add javascript file
 Have dev tools open on browser and add a js file `index.js` and src it in the html. The file loads as can be evidenced by log.
+
+Until now, we could have been developing in any framework like Vue, svelte etc., There would be no difference.
+
+## 6. Use typescript file
+Rename `index.js` file to `index.ts` and see that the log is still displayed. Snowpack is able to convert the ts into js and link it from `index.html`
