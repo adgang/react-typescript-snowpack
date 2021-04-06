@@ -1,0 +1,14 @@
+{
+  "name": "react-typescript-snowpack",
+  "version": "0.1.0",
+  "description": "This is a tutorial app for step-by-step understanding of developing a react typescript app with snowpack.",
+  "private": true,
+  "scripts": {
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "snowpack"
+  ],
+  "author": "adgang@tuta.io"
+}
