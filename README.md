@@ -10,6 +10,7 @@ Note: Because we start from scratch and add snowpack, react and typescript in th
 2. Install snowpack as dev dependency.
 3. Run snowpack dev server.
 4. Add snowpack config.
+5. Add javascript file.
 
 ## 1. Created an npm package
 
@@ -42,3 +43,6 @@ We then added `npm start` script to `package.json`.
 We notice that even git commands are triggering updates to the page. To make snowpack ignore changes in `.git` folder, we add a config file `snowpack.config.js`. We annotate the config object for typescript information in vscode.
 
 To make this step easier, generate a config file first with `npx snowpack init` and then add configure excludes option to `node_modules` and `.git` folders.
+
+## 5. Add javascript file
+Have dev tools open on browser and add a js file `index.js` and src it in the html. The file loads as can be evidenced by log.
