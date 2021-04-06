@@ -9,6 +9,7 @@ Note: Because we start from scratch and add snowpack, react and typescript in th
 1. Created an npm package and marked it private.
 2. Install snowpack as dev dependency.
 3. Run snowpack dev server.
+4. Add snowpack config.
 
 ## 1. Created an npm package
 
@@ -36,3 +37,8 @@ npx snowpack dev
 ```
 
 We then added `npm start` script to `package.json`.
+
+## 4. Add snowpack config
+We notice that even git commands are triggering updates to the page. To make snowpack ignore changes in `.git` folder, we add a config file `snowpack.config.js`. We annotate the config object for typescript information in vscode.
+
+To make this step easier, generate a config file first with `npx snowpack init` and then add configure excludes option to `node_modules` and `.git` folders.
