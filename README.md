@@ -12,6 +12,7 @@ Note: Because we start from scratch and add snowpack, react and typescript in th
 4. Add snowpack config.
 5. Add javascript file.
 6. Use typescript file.
+7. Get react to render text
 
 ## 1. Created an npm package
 
@@ -51,4 +52,17 @@ Have dev tools open on browser and add a js file `index.js` and src it in the ht
 Until now, we could have been developing in any framework like Vue, svelte etc., There would be no difference.
 
 ## 6. Use typescript file
-Rename `index.js` file to `index.ts` and see that the log is still displayed. Snowpack is able to convert the ts into js and link it from `index.html`
+Rename `index.js` file to `index.ts` and see that the log is still displayed. Snowpack is able to convert the ts into js and link it from `index.html`. We got typescript working with snowpack.
+
+
+## 7. Get react to render text
+* To get react working with the app, first install the deps.
+
+    ```
+    npm i -S react
+    npm i -S react-dom
+    ```
+    It turns out react-dom alone is not enough for this purpose.
+
+* Now add a div in html page with an id.
+* Make ReactDom take control of this div's render.

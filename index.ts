@@ -1,1 +1,3 @@
-console.log('script file loaded')
+import ReactDOM from "react-dom";
+
+ReactDOM.render("Hello World!!", document.getElementById("root"));
