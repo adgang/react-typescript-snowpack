@@ -2,7 +2,7 @@
 
 A step-by-step commit by commit development for a react typescript app with snowpack build which can serve as a tutorial.
 
-Note: Because we start from scratch and add snowpack, react and typescript in that order, this tutorial is also helpful for development in other frameworks.
+Note: Because we start from scratch and add snowpack, react and typescript, this tutorial is also helpful for development in other frameworks.
 
 # Activity
 
@@ -12,8 +12,9 @@ Note: Because we start from scratch and add snowpack, react and typescript in th
 4. Add snowpack config.
 5. Add javascript file.
 6. Use typescript file.
-7. Get react to render text
-8. Get jsx/tsx working
+7. Get react to render text.
+8. Get jsx/tsx working.
+9. Get css working.
 
 ## 1. Created an npm package
 
@@ -72,3 +73,8 @@ Rename `index.js` file to `index.ts` and see that the log is still displayed. Sn
 
 * Now lets get react templates working. We first rename the ts file as tsx and the app still works. Snowpack seems to handle the tsx pages well.
 * However if we change the text to be rendered to a jsx/tsx template, we will see an error in the page: `Uncaught ReferenceError: React is not defined`. The error message is helpful and it seems that an import of `React` in the tsx file is what it takes for the page to run.
+
+
+## 9. Get css working
+
+Add `index.css` and use it in index.tsx. Snowpack is able to get everything to work without any necessity of types or tsconfig.
