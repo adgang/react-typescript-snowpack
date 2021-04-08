@@ -15,6 +15,7 @@ Note: Because we start from scratch and add snowpack, react and typescript, this
 7. Get react to render text.
 8. Get jsx/tsx working.
 9. Get css working.
+10. Move files to src folders.
 
 ## 1. Created an npm package
 
@@ -78,3 +79,8 @@ Rename `index.js` file to `index.ts` and see that the log is still displayed. Sn
 ## 9. Get css working
 
 Add `index.css` and use it in index.tsx. Snowpack is able to get everything to work without any necessity of types or tsconfig.
+
+
+## 10. Move files to src folders
+
+To clean up our code, lets organise stuff. Move tsx and css to src folder; the html file to public folder. To get this working, we add config in `snowpack.config.js` and change the `.js` link in `index.html`.
